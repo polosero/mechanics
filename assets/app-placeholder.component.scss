@@ -1,0 +1,19 @@
+@import '../styles';
+
+$primary: map-get($app-theme, primary);
+
+:host {
+    box-sizing: border-box;
+    border: 0.2rem dashed gray;
+    border-radius: 0.2rem;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+:host(:hover) {
+  color: black;
+  border-color: mat-color($primary);
+}
